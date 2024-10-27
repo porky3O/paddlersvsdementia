@@ -401,31 +401,31 @@
 })(jQuery);
 
 // First Slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex1 = 1;
+showSlides1(slideIndex1);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides1(n) {
+    showSlides1(slideIndex1 += n);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide1(n) {
+    showSlides1(slideIndex1 = n);
 }
 
-function showSlides(n) {
+function showSlides1(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {slideIndex1 = 1}
+    if (n < 1) {slideIndex1 = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    slides[slideIndex1 - 1].style.display = "block";
+    dots[slideIndex1 - 1].className += " active";
 }
 
 // Second Slideshow
@@ -455,4 +455,33 @@ function showSlides2(n) {
     slides[slideIndex2 - 1].style.display = "block";
     dots[slideIndex2 - 1].className += " active";
 }
+
+// Third Slideshow
+let slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+    showSlides3(slideIndex3 += n);
+}
+
+function currentSlide3(n) {
+    showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides3");
+    let dots = document.getElementsByClassName("dot3");
+    if (n > slides.length) {slideIndex3 = 1}
+    if (n < 1) {slideIndex3 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex3 - 1].style.display = "block";
+    dots[slideIndex3 - 1].className += " active";
+}
+
 

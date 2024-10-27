@@ -1731,5 +1731,291 @@ input, select, textarea {
 			from {opacity: .4} 
 			to {opacity: 1}
 		}
-		
-		  
+		/* Third Slideshow styling */
+
+/* Hide all slides by default */
+.mySlides3 {
+    display: none;
+}
+
+/* Dots/bullets/indicators for the third slideshow */
+.dot3 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active and hover state for .dot3 */
+.dot3.active, .dot3:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Center dots below the third slideshow */
+.slideshow-container + div {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+/* Body Background ----------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Purple gradient */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(90deg, #8e44ad, #3498db); /* Purple to Blue gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #f1c40f; /* Gold color on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 50%, #2980b9 100%); /* Multiple purple gradients */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #6a11cb; /* Deep Purple */
+    color: white;
+    border: 2px solid #6a11cb;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #6a11cb;
+    border-color: #ffffff;
+}
+
+/* Footer (if needed) */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #8e44ad, #3498db); /* Repeating header gradient */
+    color: #ffffff;
+}
+
+
+
+
+/* About Us Section Styling */
+#about {
+    background-color: #333333; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Team Container Styling */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items per row */
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Individual Team Member Styling */
+.team-member {
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circular Image Styling */
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #d6b5f7; /* Light purple border */
+    background-color: #e0c3fc; /* Light purple background */
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Name Styling */
+.team-member h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White text for name */
+    margin: 0;
+}
+
+/* Role Styling */
+.team-member p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #ffffff; /* White text for role */
+    margin: 5px 0 0 0;
+}
+
+
+
+
+/* Profile Page Styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Back to Team Button Styling */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6a11cb; /* Purple background */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+    background-color: #4b0e91; /* Darker purple on hover */
+    color: #ffffff;
+}
+
+
+.back-link:hover {
+    color: #666;
+}
+
+.profile-content {
+    max-width: 600px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #d6b5f7; /* Light purple border */
+    background-color: #e0c3fc; /* Light purple background */
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.profile-content h2 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
