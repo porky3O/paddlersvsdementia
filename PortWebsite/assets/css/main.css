@@ -1913,9 +1913,8 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #d6b5f7; /* Light purple border */
-    background-color: #e0c3fc; /* Light purple background */
-    padding: 5px;
+    background-color: #e1e5eb; /* Light purple background */
+    padding: 3px;
     transition: transform 0.3s;
 }
 
